@@ -18,12 +18,15 @@ public class Generator {
 
     public static void main(String[] args) throws Exception {
 
-        if(args.length < 1) {
-            System.out.println("Usage: Generator <keyId>");
+        if(args.length != 1 && args.length != 3) {
+            System.out.println("Usage: Generator [-dname x500Name] <keyId>");
             System.exit(1);
         }
 
-        String keyId = args[0];
+        String keyId = args[args.length - 1];
+        if(args.length > 1) {
+
+        }
 
         // EMAILADDRESS=siteops@manheim.com, CN="Cox Automotive, Inc", O="Cox Automotive, Inc", L=Atlanta, ST=Georgia, C=US
         /*
