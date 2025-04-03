@@ -48,13 +48,13 @@ public class Generator {
 
         // TODO Add an interactive builder for this or maybe require it passed in?
         CsrInfo csrInfo = CsrInfo.builder()
-                .cn("kms.aws.amazon.com")
-                .ou("AWS")
-                .o("Amazon")
-                .l("Sao Paulo")
-                .st("Sao Paulo")
-                .c("BR")
-                .mail("kms@amazon.com")
+                .cn("Cox Automotive, Inc")
+                //.ou("AWS")
+                .o("Cox Automotive, Inc")
+                .l("Atlanta")
+                .st("Georgia")
+                .c("US")
+                .mail("siteops@manheim.com")
                 .build();
 
         System.out.println("CSR Info: " + csrInfo.toString());
